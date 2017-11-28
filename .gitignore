@@ -40,9 +40,5 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 # End of https://www.gitignore.io/api/java,maven
-.gitignore
 .idea/
 algo_tp3.iml
-data/
-pom.xml
-src/
