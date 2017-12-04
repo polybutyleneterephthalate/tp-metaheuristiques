@@ -10,7 +10,7 @@ public class UBQPReader {
         this.fileName = fileName;
     }
 
-    public int getValueAt(int i){
+    public int getValueAt(int i) {
         File file = new File(fileName);
         FileInputStream fileReader;
         String line;
@@ -35,7 +35,7 @@ public class UBQPReader {
         return getValueAt(1);
     }
 
-    public int[][] getConstantes(int lineSize){
+    public int[][] getConstantes(int lineSize) {
         int[][] values = new int[lineSize][lineSize];
         File file = new File(fileName);
         FileInputStream fileReader;
@@ -46,7 +46,7 @@ public class UBQPReader {
             line = bufferedReader.readLine();
             lineData = line.split(" ");
             int k = 2;
-            for (int i = 0; i < lineSize; i++){
+            for (int i = 0; i < lineSize; i++) {
                 for (int j = 0; j < lineSize; j++) {
                     values[i][j] = Integer.parseInt(lineData[k++]);
                 }
